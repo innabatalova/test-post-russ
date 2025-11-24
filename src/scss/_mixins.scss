@@ -1,0 +1,12 @@
+@mixin font-primary ($weight: 400, $color, $size, $line-height: initial) {
+  font: {
+    family: "Lato", sans-serif;
+    weight: $weight;
+    style: normal;
+    size: $size;
+  }
+
+  line-height: $line-height;
+  color: $color;
+  letter-spacing: 0;
+}
