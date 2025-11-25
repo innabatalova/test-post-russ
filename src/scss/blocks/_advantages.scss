@@ -4,6 +4,7 @@
 .advantages {
     position: relative;
     top: -175px;
+    max-height: 450px;
     padding-bottom: 75px;
 
     &__title {
@@ -37,6 +38,15 @@
         &_blue {
             background-color: variables.$color-primary;
         }
+
+        &:active,
+        &:hover,
+        &:focus {
+            position: relative;
+            transform: scale(1.01);
+            transition: transform 0.3s ease;
+            transform-origin: 0 0;
+        }
     }
 
     &__link {
@@ -52,6 +62,7 @@
 
 @media screen and (max-width: 1200px) {
     .advantages {
+        max-height: 360px;
 
         &__card {
             row-gap: 16px;
@@ -79,7 +90,9 @@
 @media screen and (max-width: 860px) {
     .advantages {
         top: 0;
+        max-height: max-content;
         padding-top: 25px;
+        padding-bottom: 25px;
 
         &__card {
             width: 48%;
@@ -89,6 +102,10 @@
 
 @media screen and (max-width: 740px) {
     .advantages {
+
+        &__title {
+            margin-bottom: 16px;
+        }
 
         &__cards {
             gap: 16px;

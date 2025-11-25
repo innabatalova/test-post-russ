@@ -1,0 +1,95 @@
+@use '../_variables';
+@use '../_mixins';
+
+.payment {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: variables.$color-advantages-card;
+
+    &__title {
+        margin-bottom: 24px;
+
+        &__text {
+            display: inline-block;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+    }
+
+    &__img {
+        margin-bottom: 44px;
+        border-radius: 16px;
+        background-color: variables.$color-white;
+    }
+
+    &__subtitle {
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        margin-bottom: 16px;
+    }
+
+    &__link {
+        margin-top: auto;
+        text-decoration: underline;
+        text-decoration-color: #1937FF80;
+    }
+}
+
+.text-link_black {
+    color: variables.$color-text;
+}
+
+@media screen and (max-width: 1200px) {
+    .payment {
+
+        &__card {
+            width: 31%;
+            max-width: 100%;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .payment {
+
+        &__title {
+            margin-bottom: 16px;
+
+            &__text {
+                margin-bottom: 16px;
+            }
+        }
+
+        &__cards {
+            gap: 16px;
+        }
+
+        &__card {
+            row-gap: 12px;
+            width: 100%;
+        }
+
+        &__img,
+        &__text,
+        &__subtitle {
+            margin-bottom: 0;
+        }
+
+    }
+}

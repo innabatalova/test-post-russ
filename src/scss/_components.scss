@@ -13,6 +13,14 @@
     @include mixins.text-main;
 }
 
+.text-main-bold {
+    @include mixins.text-main-bold;
+}
+
+.text-link {
+    @include mixins.text-link;
+}
+
 .main-button {
     padding: 10px 20px;
     border: none;
@@ -20,6 +28,13 @@
     outline: none;
     @include mixins.text-btn;
     background-color: variables.$color-primary;
+    cursor: pointer;
+
+    &:active,
+    &:hover,
+    &:focus {
+        background-color: variables.$color-hover;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -36,6 +51,14 @@
         font-size: 13px;
     }
 
+    .text-main-bold {
+        font-size: 16px;
+    }
+
+    .text-link {
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
@@ -50,6 +73,14 @@
 
     .text-main {
         font-size: 12px;
+    }
+
+    .text-main-bold {
+        font-size: 13px;
+    }
+
+    .text-link {
+        font-size: 13px;
     }
 
 }

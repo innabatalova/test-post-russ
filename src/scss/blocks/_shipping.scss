@@ -1,0 +1,78 @@
+@use '../_variables';
+@use '../_mixins';
+
+.shipping {
+    padding-top: 48px;
+    padding-bottom: 25px;
+    background-color: variables.$color-advantages-card;
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        max-width: 570px;
+        padding: 24px;
+        border-radius: 16px;
+        background-color: variables.$color-white;
+
+    }
+
+    &__button {
+        max-width: 120px;
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .shipping {
+
+        &__card {
+            row-gap: 16px;
+            width: 49%;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .shipping {
+        padding-top: 25px;
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        &__card {
+            row-gap: 12px;
+            width: 100%;
+        }
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .shipping {
+
+        &__button {
+            max-width: 100%;
+        }
+    }
+}
