@@ -10,10 +10,10 @@
 @use "blocks/_advantages";
 @use "blocks/_shipment";
 @use "blocks/_rates";
+@use "blocks/_payment";
 @use "blocks/_registration";
 @use "blocks/_services";
-
-
+@use "blocks/_action";
 
 //Шрифт
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');

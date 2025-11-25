@@ -46,6 +46,30 @@
     }
 }
 
+.text-subheader_white,
+.text-main_white {
+    color: variables.$color-white;
+}
+
+.text-header_red {
+    color: variables.$color-red-hero;
+}
+
+.text-link_black {
+    color: variables.$color-text;
+    text-decoration: none;
+
+    &:active,
+    &:hover,
+    &:focus {
+        color: variables.$color-text;
+    }
+}
+
+.text-link_white {
+    color:  variables.$color-white;
+}
+
 @media screen and (max-width: 1200px) {
     .text-header {
         font-size: 28px;

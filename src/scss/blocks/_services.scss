@@ -50,10 +50,6 @@
     }
 }
 
-.text-link_black {
-    color: variables.$color-text;
-}
-
 @media screen and (max-width: 1200px) {
     .services {
 
@@ -85,6 +81,8 @@
 
 @media screen and (max-width: 760px) {
     .services {
+        padding-top: 25px;
+        padding-bottom: 25px;
 
         &__title {
             margin-bottom: 16px;

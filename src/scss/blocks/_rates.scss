@@ -47,17 +47,6 @@
     }
 }
 
-.text-link_black {
-    color: variables.$color-text;
-    text-decoration: none;
-
-    &:active,
-    &:hover,
-    &:focus {
-        color: variables.$color-text;
-    }
-}
-
 @media screen and (max-width: 1200px) {
     .rates {
 

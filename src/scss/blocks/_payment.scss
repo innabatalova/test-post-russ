@@ -1,0 +1,138 @@
+@use '../_variables';
+@use '../_mixins';
+
+.payment {
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        max-width: 370px;
+        padding: 24px;
+        border-radius: 16px;
+        background-color: variables.$color-advantages-card;
+
+        &_wrap {
+            justify-content: space-between;
+            row-gap: 24px;
+            padding: 0;
+            border-radius: 0;
+            background-color: inherit;
+        }
+    }
+
+    &__subcard {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+        padding: 24px;
+        border-radius: 16px;
+        background-color: variables.$color-advantages-card;
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+    }
+
+    &__subcardtitle {
+        margin-bottom: 0;
+    }
+
+    &__img {
+        margin-bottom: 38px;
+        background-color: variables.$color-white;
+    }
+
+    &__link {
+        margin-top: auto;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    .payment {
+
+        &__card {
+            width: 31%;
+            max-width: 100%;
+            padding: 20px;
+
+            &_wrap {
+                padding: 0;
+            }
+        }
+
+        &__subcard {
+            padding: 20px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    .payment {
+
+        &__card {
+            width: 48%;
+            max-width: 100%;
+
+            &_wrap {
+                flex-direction: row;
+                width: 100%;
+            }
+        }
+
+        &__subcard {
+            width: 48%;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .payment {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__cards {
+            gap: 16px;
+        }
+
+        &__card,
+        &__subcard {
+            row-gap: 12px;
+            width: 100%;
+
+            &_wrap {
+                flex-direction: column;
+            }
+
+        }
+
+        &__subtitle,
+        &__img {
+            margin-bottom: 0;
+        }
+
+
+    }
+}
