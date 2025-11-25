@@ -17,6 +17,10 @@
     @include mixins.text-main-bold;
 }
 
+.text-list-item {
+    @include mixins.text-list-item;
+}
+
 .text-link {
     @include mixins.text-link;
     text-decoration: underline;
@@ -67,7 +71,7 @@
 }
 
 .text-link_white {
-    color:  variables.$color-white;
+    color: variables.$color-white;
 }
 
 @media screen and (max-width: 1200px) {
@@ -114,6 +118,11 @@
 
     .text-link {
         font-size: 13px;
+    }
+
+    .text-list-item {
+        font-size: 14px;
+        line-height: 20px;
     }
 
 }
