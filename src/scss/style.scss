@@ -6,3 +6,8 @@
 
 //Блоки
 @use "blocks/_header";
+@use "blocks/_hero";
+@use "blocks/_advantages";
+
+//Шрифт
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');

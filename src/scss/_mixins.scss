@@ -1,6 +1,65 @@
-@mixin font-primary ($weight: 400, $color, $size, $line-height: initial) {
+@use './_variables';
+
+@mixin header {
   font: {
-    family: "Lato", sans-serif;
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
+    weight: 700;
+    style: normal;
+    size: 32px;
+  }
+
+  line-height: 120%;
+  color: variables.$color-text;
+  letter-spacing: 0;
+}
+
+@mixin subheader {
+  font: {
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
+    weight: 700;
+    style: normal;
+    size: 24px;
+  }
+
+  line-height: 30px;
+  color: variables.$color-text;
+  letter-spacing: 0;
+}
+
+@mixin text-main {
+  font: {
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
+    weight: 400;
+    style: normal;
+    size: 15px;
+  }
+
+  line-height: 150%;
+  color: variables.$color-text;
+  letter-spacing: 0;
+}
+
+@mixin text-btn {
+  font: {
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
+    weight: 400;
+    style: normal;
+    size: 16px;
+  }
+
+  line-height: 20px;
+  color: variables.$color-text-white;
+  letter-spacing: 0;
+}
+
+@mixin uni-font ($weight, $color, $size, $line-height) {
+  font: {
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
     weight: $weight;
     style: normal;
     size: $size;

@@ -1,0 +1,73 @@
+@use './_variables';
+@use './_mixins';
+
+.text-header {
+    @include mixins.header;
+}
+
+.text-subheader {
+    @include mixins.subheader;
+}
+
+.text-main {
+    @include mixins.text-main;
+}
+
+.main-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    @include mixins.text-btn;
+    background-color: variables.$color-primary;
+}
+
+@media screen and (max-width: 1200px) {
+    .text-header {
+        font-size: 28px;
+    }
+
+    .text-subheader {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .text-main {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .text-header {
+        font-size: 24px;
+    }
+
+    .text-subheader {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .text-main {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    .text-header {
+        font-size: 20px;
+    }
+
+    .text-subheader {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .main-button {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+}

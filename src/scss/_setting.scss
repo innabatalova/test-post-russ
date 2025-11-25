@@ -4,7 +4,7 @@
 
 body {
   position: relative;
-  font-family: "Lato", sans-serif;
+  font-family: "Golos Text", sans-serif;
   font-style: normal;
   min-width: 320px;
 }
@@ -14,6 +14,10 @@ h2,
 p,
 ul {
   margin: 0;
+}
+
+img {
+  width: 100%;
 }
 
 .container {

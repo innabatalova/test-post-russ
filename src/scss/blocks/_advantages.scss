@@ -1,0 +1,106 @@
+@use '../_variables';
+@use '../_mixins';
+
+.advantages {
+    position: relative;
+    top: -175px;
+    padding-bottom: 75px;
+
+    &__title {
+        margin-bottom: 24px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    &__img {
+        max-width: 24px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        max-width: 370px;
+        padding: 24px;
+        border-radius: 16px;
+        background-color: variables.$color-advantages-card;
+
+        &_red {
+            background-color: variables.$color-red-hero;
+        }
+
+        &_blue {
+            background-color: variables.$color-primary;
+        }
+    }
+
+    &__link {
+        @include mixins.uni-font(400, variables.$color-white, 22px, 150%);
+        text-decoration: none;
+    }
+}
+
+.text-subheader_white,
+.text-main_white {
+    color: variables.$color-white;
+}
+
+@media screen and (max-width: 1200px) {
+    .advantages {
+
+        &__card {
+            row-gap: 16px;
+            width: 31%;
+            max-width: 100%;
+            padding: 20px;
+        }
+
+        &__link {
+            @include mixins.uni-font(400, variables.$color-white, 18px, 150%);
+        }
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .advantages {
+
+        &__link {
+            @include mixins.uni-font(400, variables.$color-white, 14px, 150%);
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .advantages {
+        top: 0;
+        padding-top: 25px;
+
+        &__card {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .advantages {
+
+        &__cards {
+            gap: 16px;
+        }
+
+        &__card {
+            row-gap: 12px;
+            width: 100%;
+        }
+
+        &__link {
+            @include mixins.uni-font(400, variables.$color-white, 12px, 150%);
+        }
+    }
+}

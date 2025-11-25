@@ -1,0 +1,77 @@
+@use '../_variables';
+
+.hero {
+    padding-bottom: 115px;
+    background-color: variables.$color-bg-hero;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        width: 35%;
+    }
+
+    &__title {
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    &__img {
+        width: 48%;
+    }
+}
+
+.text-header_red {
+    color: variables.$color-red-hero;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .hero {
+
+        &__title {
+            line-height: 120%;
+        }
+
+        &__text {
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+
+    .hero {
+        padding-bottom: 0;
+
+        &__text {
+            width: 48%;
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    .hero {
+
+        &__title {
+            margin-bottom: 16px;
+        }
+
+        &__wrapper {
+            flex-direction: column-reverse;
+            padding-bottom: 16px;
+        }
+
+        &__text {
+            width: 100%;
+        }
+
+        &__img {
+            width: 100%;
+        }
+    }
+}
