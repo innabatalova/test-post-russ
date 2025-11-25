@@ -1,18 +1,13 @@
 @use '../_variables';
 @use '../_mixins';
 
-.payment {
+.registration {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: variables.$color-advantages-card;
 
     &__title {
         margin-bottom: 24px;
-
-        &__text {
-            display: inline-block;
-            margin-bottom: 24px;
-        }
     }
 
     &__cards {
@@ -29,23 +24,21 @@
     }
 
     &__img {
-        margin-bottom: 44px;
+        margin-bottom: 28px;
         border-radius: 16px;
         background-color: variables.$color-white;
     }
 
     &__subtitle {
-        margin-bottom: 12px;
+        margin-bottom: 24px;
     }
 
     &__text {
-        margin-bottom: 16px;
+        margin-bottom: 28px;
     }
 
     &__link {
         margin-top: auto;
-        text-decoration: underline;
-        text-decoration-color: #1937FF80;
     }
 }
 
@@ -54,7 +47,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .payment {
+    .registration {
 
         &__card {
             width: 31%;
@@ -65,15 +58,11 @@
 
 }
 
-@media screen and (max-width: 740px) {
-    .payment {
+@media screen and (max-width: 760px) {
+    .registration {
 
         &__title {
             margin-bottom: 16px;
-
-            &__text {
-                margin-bottom: 16px;
-            }
         }
 
         &__cards {

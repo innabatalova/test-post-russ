@@ -1,7 +1,7 @@
 @use '../_variables';
 @use '../_mixins';
 
-.shipping {
+.shipment {
     padding-top: 48px;
     padding-bottom: 25px;
     background-color: variables.$color-advantages-card;
@@ -34,7 +34,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .shipping {
+    .shipment {
 
         &__card {
             row-gap: 16px;
@@ -48,7 +48,7 @@
 }
 
 @media screen and (max-width: 740px) {
-    .shipping {
+    .shipment {
         padding-top: 25px;
 
         &__title {
@@ -69,7 +69,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .shipping {
+    .shipment {
 
         &__button {
             max-width: 100%;

@@ -19,6 +19,15 @@
 
 .text-link {
     @include mixins.text-link;
+    text-decoration: underline;
+    text-decoration-color: #1937FF80;
+
+    &:active,
+    &:hover,
+    &:focus {
+        color: variables.$color-hover;
+        text-decoration-color: variables.$color-hover;
+    }
 }
 
 .main-button {
