@@ -1,5 +1,5 @@
 {
-  "name": "page-for-employ",
+  "name": "test-post-russ",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/innabatalova/page-for-employ.git"
+    "url": "git+https://github.com/innabatalova/test-post-russ"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/innabatalova/page-for-employ/issues"
+    "url": "https://github.com/innabatalova/test-post-russ/issues"
   },
-  "homepage": "https://github.com/innabatalova/page-for-employ#readme",
+  "homepage": "https://github.com/innabatalova/test-post-russ#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "file-loader": "^6.2.0",
