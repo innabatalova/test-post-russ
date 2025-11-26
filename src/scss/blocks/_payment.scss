@@ -22,7 +22,7 @@
         max-width: 370px;
         padding: 24px;
         border-radius: 16px;
-        background-color: variables.$color-advantages-card;
+        background-color: variables.$color-card-advantages;
 
         &_wrap {
             justify-content: space-between;
@@ -39,7 +39,7 @@
         row-gap: 25px;
         padding: 24px;
         border-radius: 16px;
-        background-color: variables.$color-advantages-card;
+        background-color: variables.$color-card-advantages;
     }
 
     &__subtitle {

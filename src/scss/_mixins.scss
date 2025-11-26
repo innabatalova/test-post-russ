@@ -70,6 +70,34 @@
   letter-spacing: 0;
 }
 
+@mixin text-min-title {
+  font: {
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
+    weight: 700;
+    style: normal;
+    size: 16px;
+  }
+
+  line-height: 20px;
+  color: variables.$color-text;
+  letter-spacing: 0;
+}
+
+@mixin text-min {
+  font: {
+    family: "Golos Text", sans-serif;
+    optical-sizing: auto;
+    weight: 400;
+    style: normal;
+    size: 14px;
+  }
+
+  line-height: 18px;
+  color: variables.$color-link-footer;
+  letter-spacing: 0;
+}
+
 @mixin text-btn {
   font: {
     family: "Golos Text", sans-serif;

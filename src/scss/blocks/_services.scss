@@ -23,7 +23,7 @@
         max-width: 370px;
         padding: 24px;
         border-radius: 16px;
-        background-color: variables.$color-advantages-card;
+        background-color: variables.$color-card-advantages;
 
         &:active,
         &:hover,
@@ -32,6 +32,7 @@
             transform: scale(1.01);
             transition: transform 0.3s ease;
             transform-origin: 0 0;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
         }
     }
 
